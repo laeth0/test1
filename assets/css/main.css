@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 2000px;
+}
+.container{
+    width: calc(100% - 100px);
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side-nav{
+    position: relative;
+    width: 200px;
+    background-color: #802C6E;
+    
+}
+.side-nav .contianer{
+    position: fixed;
+    background: red;
+    height: 90vh;
+    top: 76px;
+}
+
+.column{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.wrapper{
+    display: flex;
+    height: 100%;
+}
+
+nav{
+    padding: 15px 5px;
+    background-color: #fff9f2;
+    box-shadow: 0 2px 2px #ddd;
+    
+}
+
+header{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+nav .row{
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    width: calc(10% - 50px);
+    height: auto;
+    max-width: 50px;
+    min-width: 40px;
+}
+
+nav form{
+    width: calc(80% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+nav form input{
+    width: 90%;
+    max-width: 800px;
+    padding: 12px 7px;
+    border-radius: 5px;
+    background-color: #FCFAFB;
+    border: #ddd solid 1px;
+}
+
+nav form button{
+    width: 10%;
+    max-width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #FCFAFB;
+    border: #ddd solid 1px;
+}
+
+nav form button:hover{
+    background-color: #fff;
+    box-shadow: 0 2px 2px #802c6e49;
+}
+
+
+.d-none{
+    display: none !important;
+}
+
+/* From Uiverse.io by Shoh2008 */ 
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #802c6e9f;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+  .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    align-self: center;
+  }
+
+
+
+.categories .row{
+    width: 100%;;
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 70px);
+}
